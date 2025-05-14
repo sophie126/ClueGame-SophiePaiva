@@ -1,0 +1,36 @@
+public class Character {
+    private String weapon;
+    private String suspect;
+    private String location;
+
+
+
+
+    public Character(String obj, String person, String place) {
+        weapon = obj;
+        suspect = person;
+        location = place;
+    }
+
+
+
+
+    public String getWeapon() {
+        return weapon;
+    }
+
+
+
+
+    public String getSuspect() {
+        return suspect;
+    }
+
+
+
+
+    public String getLocation() {
+        return location;
+    }
+}
+
