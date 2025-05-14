@@ -26,7 +26,7 @@ public class Game {
             String answer = player.nextLine();
             if(answer.equals("accuse"))
             {
-                System.out.println("Who're you thinking is the murderer?");
+                System.out.println("Who're you thinking is the murderer? **type what's inside the quotes exactly**");
                 String guessM = player.nextLine();
                 System.out.println("With what weapon?");
                 String guessW = player.nextLine();
@@ -49,7 +49,7 @@ public class Game {
                 }
             } else if(answer.equals("guess"))
             {
-                System.out.println("Who're you thinking is the murderer?");
+                System.out.println("Who're you thinking is the murderer? **type what's inside the quotes exactly**");
                 String guessM = player.nextLine();
                 System.out.println("With what weapon?");
                 String guessW = player.nextLine();
