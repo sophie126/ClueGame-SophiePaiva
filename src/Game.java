@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Game {
     public static void main(String[] args) {
         boolean solved = false;
+        int story = (int) (Math.random() * 2);
         Character player1 = new Character("rope", "Miss Scarlet", "library");
         Character player2 = new Character("dagger", "Professor Plum", "lounge");
         Character player3 = new Character("wrench", "Mrs. Peacock", "billiard Room");
@@ -13,7 +14,15 @@ public class Game {
         System.out.println("What's your name detective?");
         String playerName = player.nextLine();
         System.out.println("Hello detective " + playerName + ", we've got a serious case here. We need your help.");
-        System.out.println("Some sicko murdered Mrs. White. She was just about to release her new book \"Surviving Clue: My side of the story\". I was so excited.");
+        if(story == 0)
+        {
+            System.out.println("Some sicko murdered Mrs. White. She was just about to release her new book \"Surviving Clue: My side of the story\". I was so excited.");
+        }
+        if(story == 1)
+        {
+            System.out.println("Somebody murdered this random rich guy. I mean, s'not really surprising, everyone hated that guy...");
+        }
+
         System.out.println();
         System.out.println("Here are the suspects:\n\"Miss Scarlet\", \"Dr.Orchid\", \"Mrs. Peacock\", and \"Professor Plum\"\n");
         System.out.println("The potentials murder weapons are:\nA \"dagger\", \"revolver\", \"rope\", or \"wrench\"\n");
