@@ -1,9 +1,9 @@
 public class Answer extends Character {
 
 
-    private String murderWeapon;
-    private String murderer;
-    private String murderLocation;
+    private final String murderWeapon;
+    private final String murderer;
+    private final String murderLocation;
 
 
     public Answer(String obj, String person, String place) {
