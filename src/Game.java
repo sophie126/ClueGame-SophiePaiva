@@ -45,7 +45,7 @@ public class Game {
                 boolean readyOrNot = player.nextBoolean();
                 if(readyOrNot)
                 {
-                    if(ans.accuse(guessM, guessW, guessL)) // if correct
+                    if(ans.accuse(guessM, guessW, guessL)) // if user is sure of their answer
                     {
                         System.out.println("Nice work detective. You cracked the case once again.");
                         solved = true;
@@ -67,7 +67,7 @@ public class Game {
                 System.out.println(ans.guess(arr, 0, guessM, guessW, guessL));
             } else
             {
-                System.out.println("**guess or accuse**");
+                System.out.println("**guess or accuse**"); // if user types the wrong thing
                 System.out.println();
             }
         }
